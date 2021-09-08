@@ -28,13 +28,16 @@ class Screen19 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: ListView(       //using ListView to align all widget in list
+      body: ListView(
+        //using ListView to align all widget in list
         children: [
           Container(
             height: 2300,
-            child: Stack(       //using stack to lap layer over another to build UI profile
+            child: Stack(
+              //using stack to lap layer over another to build UI profile
               children: [
-                Positioned(     //positioned of background image
+                Positioned(
+                  //positioned of background image
                   top: 0,
                   right: 0,
                   left: 0,
@@ -65,7 +68,8 @@ class Screen19 extends StatelessWidget {
                     ),
                   ),
                 ),
-                Positioned(     //positioned of all the content listed in listview
+                Positioned(
+                  //positioned of all the content listed in listview
                   left: 0,
                   right: 0,
                   top: MediaQuery.of(context).size.height * 0.30,
@@ -83,7 +87,8 @@ class Screen19 extends StatelessWidget {
                     child: Column(
                       children: [
                         SizedBox(height: 100),
-                        Container(          //Announcement Bar with its widget
+                        Container(
+                          //Announcement Bar with its widget
                           color: Colors.transparent,
                           child: Column(
                             children: [
@@ -113,7 +118,8 @@ class Screen19 extends StatelessWidget {
                                   ),
                                 ),
                               ),
-                              Container(            //added minicardAnn
+                              Container(
+                                //added minicardAnn
                                 height: 300,
                                 child: ListView(
                                   scrollDirection: Axis.horizontal,
@@ -123,14 +129,16 @@ class Screen19 extends StatelessWidget {
                                       color: Colors.transparent,
                                       height: 220,
                                       width: 400,
-                                      child: MiniCardAnn(), //called from screen7
+                                      child:
+                                          MiniCardAnn(), //called from screen7
                                     ),
                                     Container(
                                       margin: EdgeInsets.all(5),
                                       color: Colors.transparent,
                                       height: 200,
                                       width: 400,
-                                      child: MiniCardAnn(),  //called from screen7
+                                      child:
+                                          MiniCardAnn(), //called from screen7
                                     ),
                                   ],
                                 ),
@@ -138,7 +146,8 @@ class Screen19 extends StatelessWidget {
                             ],
                           ),
                         ),
-                        Container(        //birthday bar and its content
+                        Container(
+                          //birthday bar and its content
                           child: Column(
                             children: [
                               ListTile(
@@ -162,7 +171,8 @@ class Screen19 extends StatelessWidget {
                                   child: Text('View all'),
                                 ),
                               ),
-                              Container(      //birthdayCard
+                              Container(
+                                //birthdayCard
                                 height: 170,
                                 color: Colors.transparent,
                                 child: ListView(
@@ -173,14 +183,16 @@ class Screen19 extends StatelessWidget {
                                       color: Colors.transparent,
                                       height: 100,
                                       width: 400,
-                                      child: BirthDayCard(),    //called from screen8
+                                      child:
+                                          BirthDayCard(), //called from screen8
                                     ),
                                     Container(
                                       margin: EdgeInsets.all(10),
                                       color: Colors.transparent,
                                       height: 100,
                                       width: 400,
-                                      child: BirthDayCard(),    //called from screen8
+                                      child:
+                                          BirthDayCard(), //called from screen8
                                     ),
                                   ],
                                 ),
@@ -188,7 +200,8 @@ class Screen19 extends StatelessWidget {
                             ],
                           ),
                         ),
-                        Container(        //LeaveManagement as its Content
+                        Container(
+                          //LeaveManagement as its Content
                           child: Column(
                             children: [
                               ListTile(
@@ -214,14 +227,16 @@ class Screen19 extends StatelessWidget {
                               ),
                               Padding(
                                 padding: const EdgeInsets.all(10),
-                                child: Container(         //in Widget Content
+                                child: Container(
+                                  //in Widget Content
                                   height: 310,
                                   decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(20),
                                     color: Colors.white,
                                   ),
                                   child: Column(
-                                    children: [     //defined down below
+                                    children: [
+                                      //defined down below
                                       LeaveCardB(textA, comment1),
                                       LeaveCardB(textB, comment2),
                                       LeaveCardB(textC, comment2),
@@ -232,7 +247,8 @@ class Screen19 extends StatelessWidget {
                                           padding: EdgeInsets.only(left: 10),
                                           child: ElevatedButton(
                                             onPressed: () {
-                                              showDialog(     //dialog appled on Apply Leave
+                                              showDialog(
+                                                  //dialog appled on Apply Leave
                                                   context: context,
                                                   builder:
                                                       (BuildContext context) {
@@ -282,7 +298,8 @@ class Screen19 extends StatelessWidget {
                             ],
                           ),
                         ),
-                        Container(                //TeamMember bar as its content
+                        Container(
+                          //TeamMember bar as its content
                           child: Column(
                             children: [
                               ListTile(
@@ -317,13 +334,15 @@ class Screen19 extends StatelessWidget {
                                     ),
                                     color: Colors.white,
                                   ),
-                                  child: LinearBar(), //linear bar called from screen37 see screen37.dart file
+                                  child:
+                                      LinearBar(), //linear bar called from screen37 see screen37.dart file
                                 ),
                               ),
                             ],
                           ),
                         ),
-                        Container(                //Events bar as it content
+                        Container(
+                          //Events bar as it content
                           color: Colors.transparent,
                           child: Column(
                             children: [
@@ -348,7 +367,8 @@ class Screen19 extends StatelessWidget {
                                   child: Text('View All'),
                                 ),
                               ),
-                              Container(      //event widgets
+                              Container(
+                                //event widgets
                                 height: 300,
                                 color: Colors.transparent,
                                 child: ListView(
@@ -363,7 +383,7 @@ class Screen19 extends StatelessWidget {
                                     Container(
                                       width: 420,
                                       color: Colors.transparent,
-                                      child: ImageCard(),  //called from screen20
+                                      child: ImageCard(), //called from screen20
                                     ),
                                   ],
                                 ),
@@ -371,7 +391,8 @@ class Screen19 extends StatelessWidget {
                             ],
                           ),
                         ),
-                        Container(    //holidays bar as its content
+                        Container(
+                          //holidays bar as its content
                           child: Column(
                             children: [
                               ListTile(
@@ -401,7 +422,8 @@ class Screen19 extends StatelessWidget {
                                     color: Colors.white,
                                   ),
                                   child: Column(
-                                    children: [     //see leavecardB down below
+                                    children: [
+                                      //see leavecardB down below
                                       LeaveCardB(iDay, dateday),
                                       LeaveCardB(pakDay, dateday),
                                       LeaveCardB(labDay, dateday),
@@ -417,7 +439,8 @@ class Screen19 extends StatelessWidget {
                     //-------------------in_Container Content_End-----------------//
                   ),
                 ),
-                Positioned(       //positioned of checkin layer at top UI
+                Positioned(
+                  //positioned of checkin layer at top UI
                   left: 40,
                   right: 40,
                   top: 175,
@@ -464,7 +487,6 @@ class Screen19 extends StatelessWidget {
                               ],
                             ),
                           ),
-                          
                           Container(
                             padding: EdgeInsets.all(5),
                             height: 100,
@@ -537,5 +559,3 @@ class LeaveCardB extends StatelessWidget {
     );
   }
 }
-
-
